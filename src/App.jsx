@@ -6,7 +6,8 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { authApi, carsApi } from "./services/api";
 import { useNavigate } from "react-router-dom";
-import { logout, verifyUser } from "./store/authSlice";
+import { logout } from "./store/authSlice";
+import { authApi } from "./services/api";
 
 function App() {
   const isDarkMode = useSelector((state) => state.theme.isDarkMode);
@@ -35,7 +36,7 @@ function App() {
 
     if (!token) return;
 
-    const res = await verifyUser(token);
+    const res = await authApi.verifyUser(token);
 
     if (res && res.data.status === "success")
       dispatch(storeLogin(res.data.user));
