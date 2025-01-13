@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { authApi, carsApi } from "./services/api";
 import { useNavigate } from "react-router-dom";
 import { logout } from "./store/authSlice";
+import Cookies from "js-cookie";
 
 function App() {
   const isDarkMode = useSelector((state) => state.theme.isDarkMode);
