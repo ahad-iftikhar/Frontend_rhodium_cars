@@ -60,9 +60,6 @@ export const Home = () => {
               <h3 className="text-xl font-semibold mb-2">
                 {car.make} {car.model}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-2">
-                Year: {car.year}
-              </p>
               <p className="text-blue-500 font-semibold">
                 ${car.price.toLocaleString()}
               </p>
