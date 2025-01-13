@@ -2,7 +2,7 @@ import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import { Login } from "./components/auth/login.jsx";
+import { Login } from "./components/auth/Login.jsx";
 import { Home } from "./components/Home.jsx";
 import { Signup } from "./components/auth/Signup.jsx";
 import { AddCar } from "./components/AddCar.jsx";
