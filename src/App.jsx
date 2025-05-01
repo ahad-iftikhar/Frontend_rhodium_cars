@@ -46,6 +46,9 @@ function App() {
     checkCookie();
   }, []);
 
+
+//
+
   async function handleLogoutClick() {
     await authApi.logout();
     dispatch(logout);
