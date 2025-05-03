@@ -6,6 +6,8 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
 });
 
+console.log("BASE URL >>>", api);
+
 export const authApi = {
   login: (data) => api.post("/api/v1/users/login", data),
   signup: (data) => api.post("/api/v1/users/signup", data),
